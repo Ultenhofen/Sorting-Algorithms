@@ -27,29 +27,3 @@ def mergeSort(list):
             list[k] = Rght[j]
             j+=1
             k+=1
-
-# Main
-# Pull data from data.txt
-file = open("data.txt" , "r")
-mrg = file.readline()
-file.close()
-mrg = mrg.split(" ")
-mrg_n = []
-
-for i in range(len(mrg)):
-    mrg_n.append(int(mrg[i]))
-
-# Call mergeSort
-start = timer()
-mergeSort(mrg_n)
-e_t1 = timer() - start
-print(e_t1)
-
-# Clear merge.out
-open("merge.out" , "w").close()
-
-file = open("merge.out" , "a+")
-# Fill merge.out with the sorted values
-for i in range(len(mrg_n)):
-    file.write(str(mrg_n[i]) + " ")
-file.close()
