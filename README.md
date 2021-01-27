@@ -1,4 +1,10 @@
 # Sorting-Algorithms
 A repo for sorting algorithm practice
 
-For teachers involved in ECE 441: I will be using my work here as my portfolio assignment.
+Included algorithms:
+1. Insertion Sort
+2. Merge Sort
+3. Quick Sort
+
+Need to add algorithms:
+1. Heap Sort
